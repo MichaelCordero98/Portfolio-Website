@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="favicon.ico">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Satisfy&family=Montserrat&display=swap" rel="stylesheet">
+  <title>Michael Cordero | Software Engineer</title>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+      <ul>
+        <li><span class="nav-items">Home</span></li>
+        <li><span class="nav-items">About</span></li>
+        <li><span class="nav-items">Portfolio</span></li>
+        <li><span class="nav-items">Contact</span></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+
+  <!-- Home -->
+  <section class="home-content center">
+    <div class="intro">
+      <div class="title-container">
+        <h1>Michael Cordero</h1>
+        <h3>Hey, I'm a software engineer from Hayward, California. I like coding,
+          hooping, and gaming.
+        </h3>
+        <button type="button" class="btn" name="home-button">My Portfolio</button>
+      </div>
+      <div class="animation-container">
+        <div class="line-container">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line last"></div>
+        </div>
+        <div class="square-container">
+          <div class="square-outer">
+            <div class="square-mid">
+              <div class="square-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cover"></div>
+    </div>
+  </section>
+
+  <div class="intro-cover">
+  </div>
+
+  <!-- About -->
+  <section class="about-content center">
+    <div class="about box-shadow">
+      <div class="content-header">
+        <div class="content-header-width">
+          <h1>About</h1>
+        </div>
+      </div>
+      <div class="about-container">
+        <div class="about-left">
+          <img src="images/myself.jpg" alt="jordan poole biting his lip">
+          <h3>I lost my soul after this hike.</h3>
+        </div>
+        <div class="about-right">
+          <p>
+            Hello, I'm Michael! I'm an aspiring software engineer from the
+            bay area looking to land a role in full-stack development. I'm a
+            college graduate from UC Davis with a bachelor's degree in computer
+            engineering.
+          </p>
+          <p>
+            I spend most of my days working on personal projects, hanging
+            out with my friends, or just leisurely enjoying life.
+          </p>
+          <p>
+            My dream is to witness Curry win another title and finally win
+            a FMVP before his prime is over. I also pray every night hoping
+            that Klay will come back healthy.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio-content center">
+    <div class="portfolio box-shadow">
+      <div class="content-header">
+        <div class="content-header-width">
+          <h1>Portfolio</h1>
+        </div>
+      </div>
+      <div class="carousel-container">
+        <div class="item">
+          <h2>KIGEN</h2>
+          <div class="img-container">
+            <img src="images/KIGEN.PNG" alt="random anime generator website">
+            <button class="display-left" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="display-right" onclick="plusSlides(1)">&#10095;</button>
+          </div>
+          <p> Built using Kitsu's REST API, KIGEN is a platform for those
+            that like anime to find new animes to watch. Users can easily generate
+            random anime at the click of a button and read what they're about!
+          </p>
+          <button type="button" onclick="location.href='https://michaelcordero98.github.io/KIGEN/'" class="btn btn-view" name="portfolio-button">View Project</button>
+        </div>
+
+        <div class="item">
+          <h2>Daily Journal</h2>
+          <div class="img-container">
+            <img src="images/DailyJournal.PNG" alt="random anime generator website">
+            <button class="display-left" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="display-right" onclick="plusSlides(1)">&#10095;</button>
+          </div>
+          <p> Daily Journal is a CRUD application that lets users write entries
+            into their personal journal. These posts are stored into a mySQL
+            database so you can view them whenever you like!
+          </p>
+          <button type="button" onclick="location.href='https://murmuring-badlands-04497.herokuapp.com/'" class="btn btn-view" name="portfolio-button">View Project</button>
+        </div>
+
+        <div class="item">
+          <h2>Portfolio Website</h2>
+          <div class="img-container">
+            <img src="images/portfolio.PNG" alt="random anime generator website">
+            <button class="display-left" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="display-right" onclick="plusSlides(1)">&#10095;</button>
+          </div>
+          <p> Woah! Portfolio-ception? This is my personal portfolio website
+            that showcases who I am, my coding projects, and other things I might
+            want to show in the future. Thanks for stopping by and checking my
+            stuff out!
+          </p>
+          <button type="button" onclick="location.href='http://www.michael-cordero.com/'" class="btn btn-view" name="portfolio-button">View Project</button>
+        </div>
+
+        <div class="item">
+          <h2>Connect 4</h2>
+          <div class="img-container">
+            <img src="images/connect4.PNG" alt="random anime generator website">
+            <button class="display-left" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="display-right" onclick="plusSlides(1)">&#10095;</button>
+          </div>
+          <p> My first web application that lets two people duke it out in a classic
+            game of connect 4! Pick a column, drop a token, and it will occupy
+            the lowest spot in that column. Be the first to connect 4 tokens
+            to win!
+          </p>
+          <button type="button" onclick="location.href='https://michaelcordero98.github.io/Connect-4/'" class="btn btn-view" name="portfolio-button">View Project</button>
+        </div>
+
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-content center">
+    <div class="contact box-shadow">
+      <div class="content-header">
+        <div class="content-header-width">
+          <h1>Contact</h1>
+        </div>
+      </div>
+      <h2>Shoot a message!</h2>
+      <form class="contact-form" action="mailto:mc98.inquiries@gmail.com" method="post" enctype="text/plain">
+        <input type="text" class="contact-box" name="Name" placeholder="Name">
+        <input type="email" class="contact-box contact-margin" name="Email" placeholder="Email">
+        <textarea class="contact-box contact-margin contact-height" rows="8" name="Message" placeholder="Message"></textarea>
+        <input type="submit" class="contact-send btn" value="Send">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/michael-cordero-213b0a202/"><i class="icon icon-linkedin"></i></a>
+    <a href="https://github.com/MichaelCordero98"><i class="icon icon-github"></i></a>
+    <a href="https://www.instagram.com/michaelmagc/"><i class="icon icon-instagram"></i></a>
+    <a href="https://twitter.com/whatsupcord"><i class="icon icon-twitter"></i></a>
+
+    <p>Michael Cordero ©2021</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
