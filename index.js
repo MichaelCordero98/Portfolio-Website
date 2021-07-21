@@ -58,11 +58,18 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
+  var num;
   var i;
   var slides = document.getElementsByClassName("item");
-  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
+
+  if (slideIndex == 1) {num = "one"}
+  if (slideIndex == 2) {num = "two"}
+  if (slideIndex == 3) {num = "three"}
+  if (slideIndex == 4) {num = "four"}
+  var dots = document.getElementsByClassName(num);
+
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
